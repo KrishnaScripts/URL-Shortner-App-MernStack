@@ -11,9 +11,9 @@
   "description": "Url shortner app",
   "main": "server.js",
   "scripts": {
-    "build": "npx tsc",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node ./dist/server.js",
+    "start": "node ./dist/server.js",
     "dev": "nodemon src/server.ts"
   },
   "author": "Krishna patel",
