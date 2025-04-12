@@ -14,7 +14,7 @@
   "description": "Url shortner app",
   "main": "server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npm install && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./dist/server.js",
     "dev": "nodemon src/server.ts"
