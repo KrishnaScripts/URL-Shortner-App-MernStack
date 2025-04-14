@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json()); //conver into JSON
 app.use(express.urlencoded({extended: true})); // encode Url inbuild function
 app.use(cors({  
-  origin: "https://url-shortner-app-mernstack.onrender.com/", //frontend URL
+  origin: ['http://localhost:3000',"https://url-shortner-app-mernstack.onrender.com/"], //frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 })
