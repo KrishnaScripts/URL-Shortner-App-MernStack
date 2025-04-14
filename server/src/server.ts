@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json()); //conver into JSON
 app.use(express.urlencoded({extended: true})); // encode Url inbuild function
 app.use(cors({  
-  origin: "http://localhost:3000", //frontend URL
+  origin: "https://url-shortner-app-mernstack.onrender.com/", //frontend URL
   credentials: true,
 })
 );
