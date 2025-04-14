@@ -1,1 +1,1 @@
-export const serverUrl =  "http://localhost:5001/api";
+export const serverUrl =  "https://url-shortner-app-mernstack-1.onrender.com/api";
