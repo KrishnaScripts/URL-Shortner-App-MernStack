@@ -94,7 +94,7 @@ const Datatable: React.FC<IDataTableProps> = ({ data, updateReloadState }) => {
   
     {/* Mobile Table */}
     <div className="block sm:hidden space-y-4">
-    {!data.length && <p className="text-center text-red-500">No data availablex </p>}
+    {!data.length && <p className="text-center text-red-500">No data available </p>}
 
     {data.map((item, index) => (
       <div key={index} className="bg-white rounded-lg shadow p-4 text-sm">
