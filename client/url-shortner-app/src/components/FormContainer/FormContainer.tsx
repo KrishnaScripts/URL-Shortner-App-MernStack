@@ -41,22 +41,21 @@ const FormContainer: React.FC<IFormContainerProps> = ({ updateReloadState }) => 
                 <form onSubmit={handleSubmit}>
                     <div className="w-full">
                         <div className="relative w-full">
-                        {/* Label on the left inside input */}
-                        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-800 text-xs sm:text-sm">
+                        {/* Label inside input — hidden on mobile, shown on sm+ */}
+                        <div className="absolute inset-y-0 left-0 items-center pl-3 pointer-events-none text-slate-800 text-xs sm:text-sm hidden sm:flex">
                             UrlShortner link /
                         </div>
 
-                        {/* Input field with space for button */}
                         <input
                             type="text"
-                            placeholder="add your link here"
+                            placeholder="Add your link here"
                             required
-                            className="block w-full py-3 pl-32 pr-36 text-sm text-gray-800 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
+                            className="block w-full py-3 pl-4 sm:pl-32 pr-36 text-sm text-gray-800 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
                             value={fullUrl}
                             onChange={(e) => setFullUrl(e.target.value)}
                         />
 
-                        {/* Desktop button inside input */}
+                        {/* Desktop inline button */}
                         <div className="hidden sm:block absolute top-1/2 right-2 -translate-y-1/2">
                             <button
                             type="submit"
@@ -65,9 +64,9 @@ const FormContainer: React.FC<IFormContainerProps> = ({ updateReloadState }) => 
                             Shorten URL
                             </button>
                         </div>
-                    </div>
+                        </div>
 
-                        {/* Mobile button below input */}
+                        {/* Mobile stacked button */}
                         <div className="block sm:hidden mt-3">
                         <button
                             type="submit"
@@ -76,7 +75,7 @@ const FormContainer: React.FC<IFormContainerProps> = ({ updateReloadState }) => 
                             Shorten URL
                         </button>
                         </div>
-                        </div>
+                    </div>
                 </form>
                 </div>
             </div>
